@@ -1,0 +1,19 @@
+{
+  "name": "@vestico/rollup-test",
+  "description": "Workspace for all nodeJS service rollup",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "docs": "doctoc --title '**Table of content**' README.md"
+  },
+  "devDependencies": {
+    "@nighttrax/eslint-config-tsx": "~6.3.0",
+    "doctoc": "~1.4.0",
+    "eslint": "~7.14.0",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {}
+}

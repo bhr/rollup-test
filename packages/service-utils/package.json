@@ -1,0 +1,30 @@
+{
+  "name": "@vestico/service-utils",
+  "version": "1.0.0",
+  "main": "lib/index",
+  "module": "lib/index",
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rimraf -rf ./lib",
+    "compile": "tsc -p tsconfig.json",
+    "prepublishOnly": "yarn run build",
+    "test": "yarn run build"
+  },
+  "dependencies": {
+    "@google-cloud/logging": "^9.5.5",
+    "@google-cloud/logging-winston": "^4.1.0",
+    "@google-cloud/opentelemetry-cloud-trace-exporter": "^0.10.0",
+    "@opentelemetry/api": "^1.0.1",
+    "@opentelemetry/core": "^0.22.0",
+    "@opentelemetry/instrumentation-express": "^0.22.0",
+    "@opentelemetry/instrumentation-http": "^0.22.0",
+    "@opentelemetry/node": "^0.22.0",
+    "@opentelemetry/tracing": "^0.22.0",
+    "gaxios": "^4.3.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.12"
+  },
+  "sideEffects": false
+}

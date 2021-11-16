@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2015",
+    "lib": ["ES2019", "dom"],
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "allowUmdGlobalAccess": true
+  },
+
+  "exclude": ["node_modules", "dist"]
+}
